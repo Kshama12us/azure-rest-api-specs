@@ -1,0 +1,311 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"version": "v1",
+		"title": "RP Service API"
+	},
+	"host": "rpservice20190816114710.azurewebsites.net",
+	"schemes": [
+		"http",
+		"https"
+	],
+	"paths": {
+		"/api/Main/Get": {
+			"get": {
+				"tags": [
+					"Main"
+				],
+				"operationId": "Main_Get",
+				"consumes": [],
+				"produces": [
+					"application/json",
+					"text/json",
+					"application/xml",
+					"text/xml"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/Main/Get/{id}": {
+			"get": {
+				"tags": [
+					"Main"
+				],
+				"operationId": "Main_Get",
+				"consumes": [],
+				"produces": [
+					"application/json",
+					"text/json",
+					"application/xml",
+					"text/xml"
+				],
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "integer",
+						"format": "int32"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		},
+		"/api/Main/Post": {
+			"post": {
+				"tags": [
+					"Main"
+				],
+				"operationId": "Main_Post",
+				"consumes": [
+					"application/json",
+					"text/json",
+					"application/xml",
+					"text/xml",
+					"application/x-www-form-urlencoded"
+				],
+				"produces": [],
+				"parameters": [
+					{
+						"name": "value",
+						"in": "body",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				],
+				"responses": {
+					"204": {
+						"description": "No Content"
+					}
+				}
+			}
+		},
+		"/api/Main/Put/{id}": {
+			"put": {
+				"tags": [
+					"Main"
+				],
+				"operationId": "Main_Put",
+				"consumes": [
+					"application/json",
+					"text/json",
+					"application/xml",
+					"text/xml",
+					"application/x-www-form-urlencoded"
+				],
+				"produces": [],
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "integer",
+						"format": "int32"
+					},
+					{
+						"name": "value",
+						"in": "body",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				],
+				"responses": {
+					"204": {
+						"description": "No Content"
+					}
+				}
+			}
+		},
+		"/api/Main/Delete/{id}": {
+			"delete": {
+				"tags": [
+					"Main"
+				],
+				"operationId": "Main_Delete",
+				"consumes": [],
+				"produces": [],
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "integer",
+						"format": "int32"
+					}
+				],
+				"responses": {
+					"204": {
+						"description": "No Content"
+					}
+				}
+			}
+		},
+		"/api/Main": {
+			"get": {
+				"tags": [
+					"Main"
+				],
+				"operationId": "Main_Get",
+				"consumes": [],
+				"produces": [
+					"application/json",
+					"text/json",
+					"application/xml",
+					"text/xml"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					}
+				}
+			},
+			"post": {
+				"tags": [
+					"Main"
+				],
+				"operationId": "Main_Post",
+				"consumes": [
+					"application/json",
+					"text/json",
+					"application/xml",
+					"text/xml",
+					"application/x-www-form-urlencoded"
+				],
+				"produces": [],
+				"parameters": [
+					{
+						"name": "value",
+						"in": "body",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				],
+				"responses": {
+					"204": {
+						"description": "No Content"
+					}
+				}
+			}
+		},
+		"/api/Main/{id}": {
+			"get": {
+				"tags": [
+					"Main"
+				],
+				"operationId": "Main_Get",
+				"consumes": [],
+				"produces": [
+					"application/json",
+					"text/json",
+					"application/xml",
+					"text/xml"
+				],
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "integer",
+						"format": "int32"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "string"
+						}
+					}
+				}
+			},
+			"put": {
+				"tags": [
+					"Main"
+				],
+				"operationId": "Main_Put",
+				"consumes": [
+					"application/json",
+					"text/json",
+					"application/xml",
+					"text/xml",
+					"application/x-www-form-urlencoded"
+				],
+				"produces": [],
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "integer",
+						"format": "int32"
+					},
+					{
+						"name": "value",
+						"in": "body",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				],
+				"responses": {
+					"204": {
+						"description": "No Content"
+					}
+				}
+			},
+			"delete": {
+				"tags": [
+					"Main"
+				],
+				"operationId": "Main_Delete",
+				"consumes": [],
+				"produces": [],
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "integer",
+						"format": "int32"
+					}
+				],
+				"responses": {
+					"204": {
+						"description": "No Content"
+					}
+				}
+			}
+		}
+	},
+	"definitions": {}
+}
